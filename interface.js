@@ -5,6 +5,12 @@ const loadPage = ()=>{
     let voucherIntput = document.getElementById("voucherInput")
     let voucherButton = document.getElementById("voucherButton")
     let totalAfter = document.getElementById("totalAfter")
-    productList.innerText = 'hiiii'
+    const stock = new Stock(initialStock)
+    refreshPage = ()=>{
+        productList.innerHTML='';
+        productList.appendChild(stock.showStock())
+        // cartList.innerHTML='';
+        // cartList.appendChild(cart.showCart())
+    }
 }
 document.onload = loadPage()
