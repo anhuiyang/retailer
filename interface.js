@@ -4,8 +4,9 @@ const loadPage = ()=>{
     let totalBefore = document.getElementById("totalBefore")
     let voucherIntput = document.getElementById("voucherInput")
     let voucherButton = document.getElementById("voucherButton")
-    let totalAfter = document.getElementById("totalAfter")
-    const stock = new Stock(initialStock)
+    let totalAfter = document.getElementById("totalAfter")    
+    const stock = new Stock
+    
     refreshPage = ()=>{
         productList.innerHTML='';
         productList.appendChild(stock.showStock())

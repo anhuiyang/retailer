@@ -1,5 +1,4 @@
-const initialStock = []
-const initStock = [
+const stockData = [
     {itemId: "01", quantity: 5},
     {itemId: "02", quantity: 4},
     {itemId: "03", quantity: 12},
@@ -14,11 +13,3 @@ const initStock = [
     {itemId: "12", quantity: 10},
     {itemId: "13", quantity: 5}
 ]
-function origin(){
-    initStock.map((stock)=>{
-        for(i=0; i<stock.quantity; i++){
-            initialStock.push(new Product(stock.itemId))
-        }
-    })
-}
-origin()

@@ -1,5 +1,7 @@
 describe(`Product`, ()=>{
     let product;
+    const allProducts =[{id: "01", department: "Women's", category: "Footwear", name: "Almond Toe Court Shoes", colour: "Patent Black", price: 99.00}]
+
     beforeEach(()=>{product = new Product(("01")
     )})
     it(`will initialize with itemID state`, ()=>{

@@ -1,17 +1,17 @@
 class Product{
-    constructor(itemID){
+    constructor(itemID, products = allProducts){
     this.itemID = itemID
-    this.matchItem()
+    this.matchItem(products)
     this.department;
     this.category;
     this.name;
     this.colour;
     this.price;
     }
-    matchItem(){
+    matchItem(products){
         let id = this.itemID
         let matched;
-        allProducts.find(function(product){
+        products.find(function(product){
             if(product.id === id){
                 matched = product
             }

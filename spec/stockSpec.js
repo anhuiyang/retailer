@@ -1,10 +1,10 @@
 describe(`Stock`, ()=>{
     let stock
-    let product = [{}]
+    let stockData = [{itemId: "01", quantity: 10}]
     beforeEach(()=>{
-        stock = new Stock(product)
+        stock = new Stock(stockData)
     })
     it(`will initialize with available stock`, ()=>{
-        expect(stock.all.length).toBe(1)
+        expect(stock.all.length).toBe(10)
     })
 })
