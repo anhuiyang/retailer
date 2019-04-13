@@ -1,6 +1,6 @@
 describe(`Product`, ()=>{
     let product;
-    beforeEach(()=>{product = new Product(("01", "Women's", "Footwear", "Almond Toe Court Shoes", "Patent Black", 99.00)
+    beforeEach(()=>{product = new Product(("01")
     )})
     it(`will initialize with itemID state`, ()=>{
         expect(product.itemID).toBe("01")
