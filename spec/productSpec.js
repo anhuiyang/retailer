@@ -20,5 +20,4 @@ describe(`Product`, ()=>{
     it(`will initialize with price state`, ()=>{
         expect(product.price).toBe(99.00)
     })
-
 })

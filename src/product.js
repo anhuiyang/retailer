@@ -10,9 +10,10 @@ class Product{
     }
     matchItem(){
         let id = this.itemID
-        let matched = allProducts.find(function(product){
+        let matched;
+        allProducts.find(function(product){
             if(product.id === id){
-                return product
+                matched = product
             }
         })
         this.department = matched.department
