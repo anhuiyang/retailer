@@ -22,4 +22,7 @@ class Product{
         this.colour = matched.colour
         this.price = matched.price
     }
+    stringFormat(){
+        return `Category: ${this.deptartment} ${this.category} Name: ${this.name} Colour: ${this.colour} Price: ${parseFloat(this.price).toFixed(2)} Quantity: 1`
+    }
 }

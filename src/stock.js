@@ -10,5 +10,21 @@ class Stock{
             }
         })
     }
+    showStock = ()=>{
+        let ul = document.createElement('ul')
+        this.stringStock().map(function(text){
+        let li = document.createElement('li')
+        li.innerHTML = text
+        ul.appendChild(li)
+        })
+        return ul
+    }
 
+    stringStock = ()=>{
+        let output = []
+        this.all.map(function(product){
+            output.push(product.stringFormat())
+        })
+        return output
+    }
 }

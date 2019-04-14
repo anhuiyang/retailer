@@ -22,4 +22,7 @@ describe(`Product`, ()=>{
     it(`will initialize with price state`, ()=>{
         expect(product.price).toBe(99.00)
     })
+    it(`will stringtify product`, ()=>{
+        expect(product.stringFormat()).toContain(`Name: Almond Toe Court Shoes`)
+    })
 })
