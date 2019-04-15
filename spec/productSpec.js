@@ -1,11 +1,9 @@
 describe(`Product`, ()=>{
     let product;
-    const allProducts =[{id: "01", department: "Women's", category: "Footwear", name: "Almond Toe Court Shoes", colour: "Patent Black", price: 99.00}]
 
-    beforeEach(()=>{product = new Product(("01")
-    )})
+    beforeEach(()=>{product = new Product('01')})
     it(`will initialize with itemID state`, ()=>{
-        expect(product.itemID).toBe("01")
+        expect(product.itemId).toBe("01")
     })
     it(`will initialize with department state`, ()=>{
         expect(product.department).toBe("Women's")

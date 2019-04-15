@@ -1,16 +1,13 @@
 class Stock{
     constructor(stocks = stockData){
         this.all = []
-        this.initializeStock(stocks)
-        this.grouped = []
-    }
-    initializeStock = (stocks, product = Product)=>{
         stocks.map((stock)=>{
-            for(let i=0; i<stock.quantity; i++){
-                this.all.push(new product(stock.itemId))
+            if(stock.quantity!==0){
+                this.all.push(stock)
             }
         })
     }
+
     showStock = ()=>{
         let ul = document.createElement('ul')
         this.stringStock().map(function(text){
@@ -21,18 +18,25 @@ class Stock{
         return ul
     }
 
-    stringStock = ()=>{
+    stringStock = (product = Product)=>{
         let output = []
-        this.all.map(function(product){
-            output.push(product.stringFormat())
+        this.all.map(function(stock){
+            let eachProduct = new product(stock.itemId)
+            let stockString = eachProduct.stringFormat() + ` Quantity: ${stock.quantity}` + `<button class='product' id=p${stock.itemId}>Add To Cart</button>`
+            output.push(stockString)
         })
         return output
     }
-    groupStock = ()=>{
-        this.all.forEach((product)=>{
-            product.itemID
-            
+    
+    decrease = (itemId)=>{
+        this.all.find((stock)=>{
+            if(stock.itemID = itemId){
+                stock.quantity -= 1
+            }
         })
     }
-    
+
+    findProduct = (itemID, products = productList)=>{
+
+    }
 }
