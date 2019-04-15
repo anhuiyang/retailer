@@ -2,6 +2,7 @@ class Stock{
     constructor(stocks = stockData){
         this.all = []
         this.initializeStock(stocks)
+        this.grouped = []
     }
     initializeStock = (stocks, product = Product)=>{
         stocks.map((stock)=>{
@@ -27,4 +28,11 @@ class Stock{
         })
         return output
     }
+    groupStock = ()=>{
+        this.all.forEach((product)=>{
+            product.itemID
+            
+        })
+    }
+    
 }

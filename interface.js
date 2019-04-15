@@ -5,9 +5,9 @@ const loadPage = ()=>{
     let voucherIntput = document.getElementById("voucherInput")
     let voucherButton = document.getElementById("voucherButton")
     let totalAfter = document.getElementById("totalAfter")    
-    const stock = new Stock
-    
-    refreshPage = ()=>{
+    const stock = new Stock()
+    refreshPage()
+    function refreshPage(){
         productList.innerHTML='';
         productList.appendChild(stock.showStock())
         // cartList.innerHTML='';

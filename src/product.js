@@ -1,5 +1,5 @@
 class Product{
-    constructor(itemID, products = allProducts){
+    constructor(itemID, products = productList){
     this.itemID = itemID
     this.matchItem(products)
     this.department;
@@ -12,7 +12,7 @@ class Product{
         let id = this.itemID
         let matched;
         products.find(function(product){
-            if(product.id === id){
+            if(product.itemId === id){
                 matched = product
             }
         })
@@ -23,6 +23,6 @@ class Product{
         this.price = matched.price
     }
     stringFormat(){
-        return `Category: ${this.deptartment} ${this.category} Name: ${this.name} Colour: ${this.colour} Price: ${parseFloat(this.price).toFixed(2)} Quantity: 1`
+        return `Category: ${this.department} ${this.category} Name: ${this.name} Colour: ${this.colour} Price: ${parseFloat(this.price).toFixed(2)} Quantity: 1`
     }
 }
