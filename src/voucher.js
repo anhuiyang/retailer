@@ -6,16 +6,30 @@ class Voucher{
     }
     discount=()=>{
         let total = this.totalB
-        let cartNow = this.cart
+        let cartFoot = this.footwear()
         switch(this.code){
             case `5off`:
             return 5
             case `10off`:
             if(total>=50){
-                console.log(cartNow)
                 return 10
             }
-
+            case `15off`:
+            if(total>=75&&cartFoot){
+                return 15
+            }
         }
+    }
+    footwear=()=>{
+        let result;
+        this.cart.forEach((cartItem)=>{
+            let eachProduct = new Product(cartItem.itemId)
+            if(eachProduct.category===`Footwear`){
+                result = true
+            }else{
+                result = false
+            }
+        })
+        return result
     }
 }
