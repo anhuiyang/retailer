@@ -6,4 +6,8 @@ class Total{
         let eachProduct = new product(itemId)
         this.before += eachProduct.price
     }
+    decrease=(itemId, product = Product)=>{
+        let eachProduct = new product(itemId)
+        this.before -= eachProduct.price
+    }
 }
