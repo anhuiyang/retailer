@@ -3,11 +3,9 @@ describe(`Cart`, ()=>{
     let stringName= `Almond Toe Court Shoes`
     let stringQuantity = `Quantity: 1`
 
-    beforeAll(()=>{
+    it(`can increase in quantity`, ()=>{
         cart = new Cart(cartData)
         cart.increase(`01`)
-    })
-    it(`can increase in quantity`, ()=>{
         expect(cart.all[0].quantity).toBe(1)
 
     })

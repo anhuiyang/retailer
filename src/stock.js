@@ -38,4 +38,11 @@ class Stock{
         })
     }
 
+    increase = (itemId)=>{
+        this.all.forEach((stock)=>{
+            if(stock.itemId===itemId){
+                stock.quantity+=1
+            }
+        })
+    }
 }

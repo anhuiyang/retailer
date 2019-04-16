@@ -23,7 +23,6 @@ const loadPage = ()=>{
         }
         for(i=0; i<cbtn.length; i++){
             cbtn[i].addEventListener('click', function(){
-                console.log('i am in ')
                 stock.increase(this.id[1]+this.id[2])
                 cart.decrease(this.id[1]+this.id[2])            })
         }
