@@ -12,7 +12,7 @@ describe(`Cart`, ()=>{
 
     })
     it(`can show cart item in array of strings`, ()=>{
-        cart.stringCart()[0].toContain(stringName)
-        cart.stringCart()[0].toContain(stringQuantity)    })
-
+        expect(cart.stringCart()[0]).toContain(stringName)
+        expect(cart.stringCart()[0]).toContain(stringQuantity)
+    })
 })

@@ -2,7 +2,7 @@ class Stock{
     constructor(stocks = stockData){
         this.all = []
         stocks.map((stock)=>{
-            if(stock.quantity!==0){
+            if(stock.quantity>0){
                 this.all.push(stock)
             }
         })
