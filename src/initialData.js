@@ -13,3 +13,18 @@ const stockData = [
     {itemId: "12", quantity: 10},
     {itemId: "13", quantity: 5}
 ]
+const cartData = [
+    {itemId: "01", quantity: 0},
+    {itemId: "02", quantity: 0},
+    {itemId: "03", quantity: 0},
+    {itemId: "04", quantity: 0},
+    {itemId: "05", quantity: 0},
+    {itemId: "06", quantity: 0},
+    {itemId: "07", quantity: 0},
+    {itemId: "08", quantity: 0},
+    {itemId: "09", quantity: 0},
+    {itemId: "10", quantity: 0},
+    {itemId: "11", quantity: 0},
+    {itemId: "12", quantity: 0},
+    {itemId: "13", quantity: 0}
+]

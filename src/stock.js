@@ -16,6 +16,7 @@ class Stock{
         ul.appendChild(li)
         })
         return ul
+
     }
 
     stringStock = (product = Product)=>{
@@ -26,17 +27,15 @@ class Stock{
             output.push(stockString)
         })
         return output
+
     }
     
     decrease = (itemId)=>{
-        this.all.find((stock)=>{
-            if(stock.itemID = itemId){
-                stock.quantity -= 1
+        this.all.forEach((stock)=>{
+            if(stock.itemId===itemId){
+                stock.quantity-=1
             }
         })
     }
 
-    findProduct = (itemID, products = productList)=>{
-
-    }
 }
