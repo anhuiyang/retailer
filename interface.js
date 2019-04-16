@@ -34,6 +34,7 @@ const loadPage = ()=>{
         totalBefore.innerHTML = '';
         totalBefore.innerHTML = total.beforeString()
         voucherButton.addEventListener('click', function(){
+            console.log(cart.all)
             let voucher = new Voucher(voucherIntput, total.before, cart.all)
             total.apply(voucher.discount)
         })
