@@ -22,9 +22,10 @@ class Stock{
     stringStock = (product = Product)=>{
         let output = []
         this.all.map(function(stock){
-            let eachProduct = new product(stock.itemId)
-            let stockString = eachProduct.stringFormat() + ` Quantity: ${stock.quantity}` + `<button class='product' id=p${stock.itemId}>Add To Cart</button>`
-            output.push(stockString)
+            if(stock.quantity>0){
+                let eachProduct = new product(stock.itemId)
+                let stockString = eachProduct.stringFormat() + ` Quantity: ${stock.quantity}` + `<button class='product' id=p${stock.itemId}>Add To Cart</button>`
+                output.push(stockString)}
         })
         return output
 
