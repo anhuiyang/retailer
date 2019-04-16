@@ -11,6 +11,14 @@ class Cart{
         })
     }
 
+    decrease = (itemId)=>{
+        this.all.forEach((cart)=>{
+            if(cart.itemId===itemId){
+                cart.quantity-=1
+            }
+        })
+    }
+
     stringCart = (product = Product)=>{
         let output = []
         this.all.map((cart)=>{
