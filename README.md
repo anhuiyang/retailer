@@ -15,9 +15,12 @@ With a index.html page as user interface, a interface.js to control content in i
 3. Run bundle install dependencies `npm install`
 4. Run the test `open specRunner.html`
 5. Open index page `open index.html`
-![index](https://github.com/anhuiyang/)
+![index](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.28.39%20pm.png?raw=true)
 
 ## User Stories
+Raw Data:
+![rawData](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.32.29%20pm.png?raw=true)
+
 ```
 1. As a User I can add a product to my shopping cart.
 2. As a User I can remove a product from my shopping cart.
@@ -29,5 +32,5 @@ With a index.html page as user interface, a interface.js to control content in i
 9. As a User I am unable to Out of Stock products to the shopping cart.
 ```
 ## Approach
-
+Raw Data above was sorted into this table:
 ![products](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.25.02%20pm.png?raw=true)
