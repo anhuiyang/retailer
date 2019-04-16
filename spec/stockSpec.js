@@ -14,4 +14,8 @@ describe(`Stock`, ()=>{
         stock.decrease(`01`)
         expect(stock.all[0].quantity).toBe(9)
     })
+    it(`can increase a stock`, ()=>{
+        stock.increase(`01`)
+        expect(stock.all[0].quantity).toBe(11)
+    })
 })
