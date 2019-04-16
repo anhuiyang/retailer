@@ -17,6 +17,8 @@ const loadPage = ()=>{
                 cart.increase(this.id[1]+this.id[2])
             })
         }
+        cartList.innerHTML='';
+        cartList.appendChild(cart.showStock())
     }, 400);
 
     // const cart = new Cart()
