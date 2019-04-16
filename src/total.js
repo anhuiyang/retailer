@@ -10,4 +10,7 @@ class Total{
         let eachProduct = new product(itemId)
         this.before -= eachProduct.price
     }
+    beforeString=()=>{
+        return `<h3>Total before discount: ${parseFloat(this.before).toFixed(2)}</h3>`
+    }
 }
