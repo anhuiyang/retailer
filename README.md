@@ -17,10 +17,7 @@ With a index.html page as user interface, a interface.js to control content in i
 5. Open index page `open index.html`
 ![index](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.28.39%20pm.png?raw=true)
 
-## User Stories
-Raw Data:
-![rawData](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.32.29%20pm.png?raw=true)
-
+## Requirement
 ```
 1. As a User I can add a product to my shopping cart.
 2. As a User I can remove a product from my shopping cart.
@@ -31,6 +28,10 @@ Raw Data:
 8. As a User I am alerted when I apply an invalid voucher to my shopping cart.
 9. As a User I am unable to Out of Stock products to the shopping cart.
 ```
+Raw Data:
+![rawData](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.32.29%20pm.png?raw=true)
+
+
 ## Approach
 Raw Data above was sorted into this table:
 ![products](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.25.02%20pm.png?raw=true)
