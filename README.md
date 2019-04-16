@@ -1,4 +1,4 @@
-# An Clothing Retailer Web Page
+# A Clothing Retailer Web Page
 A responsive web page for a clothing retailer
 
 ## Description
@@ -15,6 +15,7 @@ With a index.html page as user interface, a interface.js to control content in i
 3. Run bundle install dependencies `npm install`
 4. Run the test `open specRunner.html`
 5. Open index page `open index.html`
+You'll see
 ![index](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.28.39%20pm.png?raw=true)
 
 ## Requirement
@@ -35,3 +36,11 @@ Raw Data:
 ## Approach
 Raw Data above was sorted into this table:
 ![products](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.25.02%20pm.png?raw=true)
+
+I started off a design structure of index then interface page to control the content showing there.
+Following the user story to add functionality to interface and test driven to implement each class and functions along the way.
+It's working alright at the moment
+But with more time, I would like to
+1. add a new productlist class which can seperate the concern 
+2. stop invalid voucher code alert from popping up non-stop
+3. use react.js instead of vanilla javascript
