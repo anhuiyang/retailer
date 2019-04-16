@@ -8,7 +8,6 @@ const loadPage = ()=>{
     const stock = new Stock()
     const cart = new Cart()
     const total = new Total()
-    const voucher = new voucher()
 
     setInterval(() => {
         productList.innerHTML='';
@@ -34,9 +33,14 @@ const loadPage = ()=>{
         totalBefore.innerHTML = '';
         totalBefore.innerHTML = total.beforeString()
         voucherButton.addEventListener('click', function(){
-            console.log(cart.all)
-            let voucher = new Voucher(voucherIntput, total.before, cart.all)
-            total.apply(voucher.discount)
+            var voucher = new Voucher(voucherIntput.value, total.before, cart.all)
+            if(voucher.discount()===`invalid input`){
+                alert(voucher.discount())
+            }else{
+                total.apply(voucher.discount())
+            }
+            voucherIntput, totalAfter.innerHTML = '';
+            totalAfter.innerHTML = total.afterString()
         })
     }, 400);
 }

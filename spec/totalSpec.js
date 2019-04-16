@@ -25,7 +25,8 @@ describe(`Total`, ()=>{
     })
 })
 describe(`Total`, ()=>{
-    let total;
+    let total, afterString = `<h3>Total after discount: 169.00</h3>`
+
     beforeEach(()=>{
         total = new Total()
     })
@@ -41,6 +42,6 @@ describe(`Total`, ()=>{
         total.apply(5)
         expect(total.before).toBe(174.00)
         expect(total.after).toBe(169.00)
-
+        expect(total.afterString()).toBe(afterString)
     })
 })

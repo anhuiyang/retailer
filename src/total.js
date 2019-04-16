@@ -17,4 +17,7 @@ class Total{
     apply=(discount)=>{
         this.after = this.before - discount
     }
+    afterString=()=>{
+        return `<h3>Total after discount: ${parseFloat(this.after).toFixed(2)}</h3>`
+    }
 }
