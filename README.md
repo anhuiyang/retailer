@@ -19,13 +19,12 @@ With a index.html page as user interface, a interface.js to control content in i
 
 ## User Stories
 ```
-1. Asa User I can add a product to my shopping cart.
-2. Asa User I can remove a product from my shopping cart.
-3. Asa User I can view the total price for the products in my shopping
+1. As a User I can add a product to my shopping cart.
+2. As a User I can remove a product from my shopping cart.
+3. As a User I can view the total price for the products in my shopping
 4. cart.
-5. Asa User I can apply a voucher to my shopping cart.
-6. Asa User I can view the total price for the products in my shopping cart
-7. with discounts applied.
+5. As a User I can apply a voucher to my shopping cart.
+6. As a User I can view the total price for the products in my shopping cart with discounts applied.
 8. As a User I am alerted when I apply an invalid voucher to my shopping cart.
 9. As a User I am unable to Out of Stock products to the shopping cart.
 ```
