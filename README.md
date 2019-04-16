@@ -30,3 +30,4 @@ With a index.html page as user interface, a interface.js to control content in i
 ```
 ## Approach
 
+![products](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.25.02%20pm.png?raw=true)
