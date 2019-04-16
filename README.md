@@ -15,8 +15,11 @@ With a index.html page as user interface, a interface.js to control content in i
 3. Run bundle install dependencies `npm install`
 4. Run the test `open specRunner.html`
 5. Open index page `open index.html`
-You'll see
+
+
+You'll see:
 ![index](https://github.com/anhuiyang/retailer/blob/master/img/Screenshot%202019-04-16%20at%205.28.39%20pm.png?raw=true)
+
 
 ## Requirement
 ```
