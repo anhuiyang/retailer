@@ -7,7 +7,8 @@ const loadPage = ()=>{
     let totalAfter = document.getElementById("totalAfter")    
     const stock = new Stock()
     const cart = new Cart()
-    const total = new Total
+    const total = new Total()
+    const voucher = new voucher()
 
     setInterval(() => {
         productList.innerHTML='';
@@ -33,7 +34,8 @@ const loadPage = ()=>{
         totalBefore.innerHTML = '';
         totalBefore.innerHTML = total.beforeString()
         voucherButton.addEventListener('click', function(){
-            total.voucher(voucherIntput)
+            let voucher = new Voucher(voucherIntput, total.before, cart.all)
+            total.apply(voucher.discount)
         })
     }, 400);
 }
