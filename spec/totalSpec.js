@@ -35,4 +35,12 @@ describe(`Total`, ()=>{
         total.decrease(`01`)
         expect(total.before).toBe(75.00)
     })
+    it(`can apply voucher showing price before and after`, ()=>{
+        total.increase(`01`)
+        total.increase(`10`)
+        total.voucher(`5off`)
+        expect(total.before).toBe(174.00)
+        expect(total.before).toBe(169.00)
+
+    })
 })

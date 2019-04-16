@@ -32,6 +32,9 @@ const loadPage = ()=>{
         }
         totalBefore.innerHTML = '';
         totalBefore.innerHTML = total.beforeString()
+        voucherButton.addEventListener('click', function(){
+            total.voucher(voucherIntput)
+        })
     }, 400);
 }
 document.onload = loadPage()
